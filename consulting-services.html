@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Services | AI SB Consulting</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .services-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .services-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+        
+        .services-grid {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2d3748;
+            margin: 20px 0;
+        }
+        
+        .service-price small {
+            font-size: 1rem;
+            color: #718096;
+            font-weight: normal;
+        }
+        
+        .service-card ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .service-card ul li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #4a5568;
+        }
+        
+        .service-card ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #5568d3;
+        }
+        
+        .process-section {
+            background: #f7fafc;
+            padding: 80px 20px;
+            margin-top: 60px;
+        }
+        
+        .process-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 50px;
+        }
+        
+        .process-steps {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            gap: 30px;
+        }
+        
+        .process-step {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .step-content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .services-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .services-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">AI SB CONSULTING</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="consulting-services.html" class="active">Consulting Services</a></li>
+                <li><a href="live-demos.html">Live Demos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="cta-nav">📅 Book a Demo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="services-hero">
+        <h1>AI Consulting Services</h1>
+        <p>From one-time audits to complete AI transformation. We help small businesses implement AI the right way — without the overwhelm.</p>
+    </section>
+
+    <section class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3>AI Workflow Audit</h3>
+            <div class="service-price">$500 - $2,000</div>
+            <p>Discover exactly where AI can save you time and money. Get a clear roadmap you can act on immediately.</p>
+            <ul>
+                <li>1-2 hour consultation</li>
+                <li>Map your current workflows</li>
+                <li>Identify automation opportunities</li>
+                <li>10-20 page implementation report</li>
+                <li>Time & cost savings analysis</li>
+                <li>Prioritized recommendations</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Get Your Audit</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Custom AI System Build</h3>
+            <div class="service-price">$1,500 - $5,000</div>
+            <p>We build the AI systems your business actually needs. Not theory — working automation that saves hours every week.</p>
+            <ul>
+                <li>Custom chatbots & assistants</li>
+                <li>Document processing systems</li>
+                <li>Email & content automation</li>
+                <li>System prompts & integration</li>
+                <li>Testing & documentation</li>
+                <li>Training session included</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Build My System</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>Monthly AI Retainer</h3>
+            <div class="service-price">$500 - $1,000<small>/month</small></div>
+            <p>Your dedicated AI partner. Flexible monthly support tailored to your needs — from basic maintenance to full AI transformation.</p>
+            <ul>
+                <li>Custom hours based on your needs</li>
+                <li>Ongoing system optimization</li>
+                <li>New automation builds</li>
+                <li>Priority troubleshooting</li>
+                <li>Monthly performance reports</li>
+                <li>Scales with your business</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Partner With Us</a>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <h2>How It Works</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Discovery Call</h3>
+                    <p>We start with a 30-minute call to understand your business, your workflows, and your biggest time-wasters. No sales pitch — just questions.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Custom Proposal</h3>
+                    <p>Based on your needs, we create a detailed proposal showing exactly what we'll build, how long it will take, and what you'll save.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Build & Deliver</h3>
+                    <p>We do the work. You get updates along the way. Most projects deliver in 1-2 weeks, sometimes faster.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Training & Support</h3>
+                    <p>We train your team, provide documentation, and make sure everything works perfectly before we hand it over.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #667eea; color: white; padding: 80px 20px; text-align: center; margin-top: 60px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to Stop Wasting Time on Tasks AI Could Handle?</h2>
+        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.95;">
+            Book a free 30-minute discovery call. We'll show you exactly where AI can save you time and money — no obligation.
+        </p>
+        <a href="contact.html" class="cta-button" style="background: white; color: #667eea; font-size: 1.1rem; padding: 18px 40px;">
+            Schedule Your Free Call
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>AISB CONSULTING</h3>
+                <p>AI voice automation for local and small businesses. Done-for-you AI receptionists starting at $99/mo.</p>
+            </div>
+            <div class="footer-section">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="index.html">AI Voice Receptionist</a></li>
+                    <li><a href="consulting-services.html">AI Consultation</a></li>
+                    <li><a href="consulting-services.html">Workflow Automation</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>EXPLORE</h4>
+                <ul>
+                    <li><a href="live-demos.html">Live Demos</a></li>
+                    <li><a href="about.html">About Andrew</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li>aisbconsulting.com@gmail.com</li>
+                    <li>Demo: (781) 486-1659</li>
+                    <li>AISBConsulting.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 AI SB Consulting. All rights reserved. Built by Andrew Curtis
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
