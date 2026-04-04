@@ -122,40 +122,40 @@
       <!-- Right: Contact Form -->
       <div class="contact-form">
         <h3>Contact / Inquiry</h3>
-        <form id="contactForm" action="https://formsubmit.co/aisbconsulting.com@gmail.com" method="POST">
-          <!-- FormSubmit Configuration -->
-          <input type="hidden" name="_subject" value="New Inquiry — AI SB Consulting">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://aisbconsulting.com/thankyou.html">
-          <input type="hidden" name="_replyto" value="email">
-          <input type="hidden" name="_autoresponse" value="Hi there, thanks for reaching out to AI SB Consulting — I appreciate your interest! I'd love to learn more about your business and show you exactly how our AI Voice Receptionist works. The best next step is a quick 15-minute demo call where I can walk you through it live. You can book a time that works for you directly here: https://calendar.app.google/a2PXuKo8yGJwg3q36 — or if you'd rather just call, our demo line is available 24/7: (781) 486-1659. Looking forward to connecting! Andrew Curtis | AI SB Consulting | aisbconsulting.com@gmail.com | (781) 626-0050">
+        <form id="contactForm" action="https://aisbconsulting.us11.list-manage.com/subscribe/post?u=741f43be503170c8996dab172&amp;id=d38d270da1" method="POST">
+          <!-- Mailchimp hidden fields -->
+          <input type="hidden" name="u" value="741f43be503170c8996dab172">
+          <input type="hidden" name="id" value="d38d270da1">
+          <!-- Anti-bot honeypot -->
+          <div style="position:absolute;left:-5000px;" aria-hidden="true">
+            <input type="text" name="b_741f43be503170c8996dab172_d38d270da1" tabindex="-1" value="">
+          </div>
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">First Name *</label>
-              <input type="text" id="firstName" name="First Name" required placeholder="John">
+              <input type="text" id="firstName" name="FNAME" required placeholder="John">
             </div>
             <div class="form-group">
               <label for="lastName">Last Name *</label>
-              <input type="text" id="lastName" name="Last Name" required placeholder="Smith">
+              <input type="text" id="lastName" name="LNAME" required placeholder="Smith">
             </div>
           </div>
           <div class="form-group">
             <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required placeholder="john@yourbusiness.com">
+            <input type="email" id="email" name="EMAIL" required placeholder="john@yourbusiness.com">
           </div>
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="Phone" placeholder="(555) 555-5555">
+            <input type="tel" id="phone" name="PHONE" placeholder="(555) 555-5555">
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="business">Business Name *</label>
-              <input type="text" id="business" name="Business Name" required placeholder="Your Business">
+              <input type="text" id="business" name="COMPANY" required placeholder="Your Business">
             </div>
             <div class="form-group">
               <label for="industry">Industry *</label>
-              <select id="industry" name="Industry" required>
+              <select id="industry" name="MMERGE7" required>
                 <option value="">Select one…</option>
                 <option>Hair Salon / Spa</option>
                 <option>Bridal / Wedding</option>
@@ -170,7 +170,7 @@
           </div>
           <div class="form-group">
             <label for="interest">What are you interested in?</label>
-            <select id="interest" name="Interest">
+            <select id="interest" name="MMERGE8">
               <option value="">Select one…</option>
               <option>AI Voice Receptionist — Free Trial</option>
               <option>AI Consultation Session</option>
@@ -191,7 +191,7 @@
           </div>
           <div class="form-group">
             <label for="message">Tell us about your business</label>
-            <textarea id="message" name="Message" placeholder="How many calls do you get per week? What's your biggest pain point with phone calls right now?"></textarea>
+            <textarea id="message" name="MMERGE9" placeholder="How many calls do you get per week? What's your biggest pain point with phone calls right now?"></textarea>
           </div>
           <button type="submit" class="form-submit">Send Message — Get a Same-Day Reply →</button>
         </form>
@@ -246,6 +246,45 @@
     document.getElementById('navLinks').classList.toggle('open');
   });
 
+  var form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = form.querySelector('.form-submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      var baseUrl = 'https://aisbconsulting.us11.list-manage.com/subscribe/post-json?u=741f43be503170c8996dab172&id=d38d270da1';
+      var formData = new FormData(form);
+      var params = '';
+      formData.forEach(function(value, key) {
+        if (key === 'u' || key === 'id') return;
+        params += '&' + encodeURIComponent(key) + '=' + encodeURIComponent(value);
+      });
+
+      var callbackName = 'mc_cb_' + Date.now();
+      window[callbackName] = function(response) {
+        if (response.result === 'success') {
+          document.getElementById('formSuccess').style.display = 'block';
+          form.style.display = 'none';
+          btn.textContent = 'Sent!';
+        } else if (response.msg && response.msg.indexOf('already subscribed') > -1) {
+          document.getElementById('formSuccess').innerHTML = '<strong style="color:#16a34a;">You are already on our list!</strong><br><span style="font-size:13px;color:#374151;">We have updated your info. We will be in touch soon.</span>';
+          document.getElementById('formSuccess').style.display = 'block';
+          form.style.display = 'none';
+          btn.textContent = 'Sent!';
+        } else {
+          btn.textContent = 'Error. Please try again.';
+          btn.disabled = false;
+        }
+        delete window[callbackName];
+      };
+
+      var script = document.createElement('script');
+      script.src = baseUrl + params + '&c=' + callbackName;
+      document.body.appendChild(script);
+    });
+  }
 </script>
 </body>
 </html>
