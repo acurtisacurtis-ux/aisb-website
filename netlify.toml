@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[context.production]
+  environment = { NODE_ENV = "production" }
+
+[context.branch-deploy]
+  environment = { NODE_ENV = "staging" }
+
+[context.preview]
+  environment = { NODE_ENV = "staging" }
+
