@@ -46,12 +46,24 @@
     </button>
     <div class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
-      <a href="product.html">Product</a>
-      <a href="services.html">Services</a>
-      <a href="demos.html">Live Demo</a>
+      <div class="nav-dropdown" id="navDropdown">
+        <a href="#" class="nav-dropdown-toggle" id="navDropdownToggle">Services &#x25BE;</a>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-heading">AI Services</div>
+            <a href="product.html">AI Voice Receptionist</a>
+            <a href="services.html">AI Efficiency Audit</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-heading">Accounting &amp; Finance</div>
+            <a href="accounting.html">Accounting Services</a>
+          </div>
+        </div>
+      </div>
+      <a href="demos.html" class="active">Live Demo</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta" style="background:#1a2744;">&#x1F4C5; Book a Demo</a>
+      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta">&#x1F4C5; Book a Demo</a>
       <a href="tel:7814861659" class="nav-cta">&#x1F4DE; Call Demo</a>
     </div>
   </div>
@@ -227,11 +239,14 @@
     document.getElementById('navLinks').classList.toggle('open');
   });
   document.getElementById('navDropdownToggle').addEventListener('click', function(e) {
-    // On mobile (nav open), toggle dropdown. On desktop, allow hover to handle it.
     if (window.innerWidth <= 768) {
       e.preventDefault();
       document.getElementById('navDropdown').classList.toggle('open');
     }
+  });
+  document.addEventListener('click', function(e) {
+    var dd = document.getElementById('navDropdown');
+    if (dd && !dd.contains(e.target)) dd.classList.remove('open');
   });
 </script>
 </body>
