@@ -3,147 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon | AISB Consulting</title>
+  <title>Page Not Found | AISB Consulting</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="topbar"></div>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="logo.png" alt="AISB Consulting"><span class="nav-brand">AISB Consulting</span></a><button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button><div class="nav-menu" id="navMenu"><a href="why-aisb.html">Why AISB?</a><div class="nav-dd"><button class="nav-dd-btn" onclick="this.parentElement.classList.toggle('open')">Services</button><div class="nav-dd-panel"><a href="services/bookkeeping.html" class="dd-item"><span class="dd-icon">📚</span><div><span class="dd-title">Bookkeeping</span><span class="dd-desc">Accurate books, every month</span></div></a><a href="services/cfo-advisory.html" class="dd-item"><span class="dd-icon">📊</span><div><span class="dd-title">CFO Advisory</span><span class="dd-desc">Strategic guidance for growth</span></div></a><a href="services/payroll-hr.html" class="dd-item"><span class="dd-icon">💰</span><div><span class="dd-title">Payroll & HR</span><span class="dd-desc">Payroll, compliance, done</span></div></a><a href="services/tax.html" class="dd-item"><span class="dd-icon">🧾</span><div><span class="dd-title">Tax</span><span class="dd-desc">Tax prep tailored to your business</span></div></a><a href="services/back-office-tech.html" class="dd-item"><span class="dd-icon">⚙️</span><div><span class="dd-title">Back Office Technology</span><span class="dd-desc">Systems that scale with you</span></div></a><a href="services/ai-efficiency-audit.html" class="dd-item"><span class="dd-icon">🤖</span><div><span class="dd-title">AI Efficiency Audit</span><span class="dd-desc">Find what AI can automate</span></div></a><a href="services/workflow-automation.html" class="dd-item"><span class="dd-icon">🔄</span><div><span class="dd-title">Workflow Automation</span><span class="dd-desc">Eliminate repetitive tasks</span></div></a></div></div><a href="software.html">Software</a><a href="pricing.html">Pricing</a><a href="partners.html">Partners</a><a href="about.html">About</a><div class="nav-ctas"><a href="tel:7814861659" class="nav-cta outline">📞 Call Demo</a><a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta solid">Book a Consultation</a></div></div></div></nav>
 
-<!-- ── NAVIGATION ── -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/index.html" class="nav-logo">
-      <img src="/logo.png" alt="AISB Consulting" style="height:52px;width:auto;display:block;">
-      <span class="nav-brand">AISB Consulting</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="navLinks">
-      <a href="/why-aisb.html">Why AISB?</a>
-      <div class="nav-dropdown">
-        <a href="/services.html" class="nav-dropdown-trigger">Services <span class="arrow">&#9662;</span></a>
-        <div class="nav-dropdown-menu">
-          <div class="dropdown-grid">
-            <a href="/services/bookkeeping.html" class="dropdown-item">
-              <span class="dropdown-icon">📚</span>
-              <div>
-                <span class="dropdown-title">Bookkeeping</span>
-                <span class="dropdown-tagline">Accurate books, every month</span>
-              </div>
-            </a>
-            <a href="/services/cfo-advisory.html" class="dropdown-item">
-              <span class="dropdown-icon">📊</span>
-              <div>
-                <span class="dropdown-title">CFO Advisory</span>
-                <span class="dropdown-tagline">Strategic guidance for growth</span>
-              </div>
-            </a>
-            <a href="/services/payroll-hr.html" class="dropdown-item">
-              <span class="dropdown-icon">💰</span>
-              <div>
-                <span class="dropdown-title">Payroll &amp; HR</span>
-                <span class="dropdown-tagline">Payroll, compliance, done</span>
-              </div>
-            </a>
-            <a href="/services/tax.html" class="dropdown-item">
-              <span class="dropdown-icon">🧾</span>
-              <div>
-                <span class="dropdown-title">Tax</span>
-                <span class="dropdown-tagline">Tax prep tailored to your business</span>
-              </div>
-            </a>
-            <a href="/services/back-office-tech.html" class="dropdown-item">
-              <span class="dropdown-icon">⚙️</span>
-              <div>
-                <span class="dropdown-title">Back Office Technology</span>
-                <span class="dropdown-tagline">Systems that scale with you</span>
-              </div>
-            </a>
-            <a href="/services/ai-efficiency-audit.html" class="dropdown-item">
-              <span class="dropdown-icon">🤖</span>
-              <div>
-                <span class="dropdown-title">AI Efficiency Audit</span>
-                <span class="dropdown-tagline">Find what AI can automate</span>
-              </div>
-            </a>
-            <a href="/services/workflow-automation.html" class="dropdown-item">
-              <span class="dropdown-icon">🔄</span>
-              <div>
-                <span class="dropdown-title">Workflow Automation</span>
-                <span class="dropdown-tagline">Eliminate repetitive tasks</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <a href="/software.html">Software</a>
-      <a href="/pricing.html">Pricing</a>
-      <a href="/partners.html">Partners</a>
-      <a href="/about.html">About</a>
-      <a href="tel:7814861659" class="nav-cta" style="background:#1a2744;border:1px solid rgba(255,255,255,0.3);">📞 Call Demo</a>
-      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta">Book a Consultation</a>
+<section class="hero" style="min-height:60vh;display:flex;align-items:center">
+  <div class="wrap center">
+    <div style="font-size:80px;margin-bottom:16px">🔍</div>
+    <h1 style="color:#fff;margin-bottom:12px">404 — Page Not Found</h1>
+    <p class="hero-sub" style="max-width:460px;margin:0 auto 32px;text-align:center">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="index.html" class="btn btn-primary btn-lg">Back to Home</a>
+      <a href="contact.html" class="btn btn-ghost btn-lg">Contact Us</a>
     </div>
-  </div>
-</nav>
-<div class="accent-bar"></div>
-
-<!-- ── UNDER CONSTRUCTION HERO ── -->
-<section style="min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;">
-  <div style="max-width:600px;">
-    <div style="font-size:72px;margin-bottom:24px;">🚧</div>
-    <h1 style="font-size:36px;color:#1a2744;margin-bottom:16px;">Under Construction</h1>
-    <p style="font-size:18px;color:#64748b;line-height:1.7;margin-bottom:32px;">We're building something great here. This page is coming soon — check back shortly or explore what's already live.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="/index.html" class="btn btn-primary btn-lg">Back to Home</a>
-      <a href="/software.html" class="btn btn-outline btn-lg">Explore Our Software →</a>
-    </div>
-    <p style="font-size:14px;color:#94a3b8;margin-top:32px;">Questions? <a href="/contact.html" style="color:#0d9488;text-decoration:underline;">Contact us</a> or call <a href="tel:7814861659" style="color:#0d9488;text-decoration:underline;">(781) 486-1659</a></p>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
-<footer class="footer">
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo-text">AISB <span>CONSULTING</span></div>
-      <p>AI-powered accounting, bookkeeping, tax, and business automation for small businesses. Platform-agnostic. Transparent pricing.</p>
-    </div>
-    <div class="footer-col">
-      <h4>SERVICES</h4>
-      <a href="/services/bookkeeping.html">Bookkeeping</a>
-      <a href="/services/cfo-advisory.html">CFO Advisory</a>
-      <a href="/services/tax.html">Tax</a>
-      <a href="/services/payroll-hr.html">Payroll &amp; HR</a>
-      <a href="/services/ai-efficiency-audit.html">AI Efficiency Audit</a>
-      <a href="/services/workflow-automation.html">Workflow Automation</a>
-    </div>
-    <div class="footer-col">
-      <h4>EXPLORE</h4>
-      <a href="/why-aisb.html">Why AISB?</a>
-      <a href="/software.html">Software</a>
-      <a href="/pricing.html">Pricing</a>
-      <a href="/partners.html">Partners</a>
-      <a href="/about.html">About</a>
-    </div>
-    <div class="footer-col">
-      <h4>CONTACT</h4>
-      <a href="mailto:aisbconsulting.com@gmail.com">aisbconsulting.com@gmail.com</a>
-      <a href="tel:7814861659">Demo: (781) 486-1659</a>
-      <a href="/contact.html">Contact Us</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 AISB Consulting. All rights reserved.</span>
-    <span>Built by Andrew Curtis</span>
-  </div>
-</footer>
-
-<script>
-  document.getElementById('navToggle').addEventListener('click', function() {
-    document.getElementById('navLinks').classList.toggle('open');
-  });
-</script>
+<footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="logo-text">AISB <span>CONSULTING</span></div><p>AI-powered accounting, bookkeeping, tax, and business automation for small businesses.</p></div><div class="footer-col"><h4>Services</h4><a href="services/bookkeeping.html">Bookkeeping</a><a href="services/cfo-advisory.html">CFO Advisory</a><a href="services/tax.html">Tax</a><a href="services/payroll-hr.html">Payroll &amp; HR</a></div><div class="footer-col"><h4>Explore</h4><a href="why-aisb.html">Why AISB?</a><a href="software.html">Software</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></div><div class="footer-col"><h4>Contact</h4><a href="mailto:info@aisbconsulting.com">info@aisbconsulting.com</a><a href="tel:7816260050">(781) 626-0050</a><a href="tel:7814861659">Demo Line: (781) 486-1659</a></div></div><div class="footer-bottom"><span>&copy; 2026 AISB Consulting. All rights reserved.</span><span>Built by Andrew Curtis</span></div></footer>
+<script>document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('navMenu').classList.toggle('open')});</script>
 </body>
 </html>
