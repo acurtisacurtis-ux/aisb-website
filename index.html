@@ -5,260 +5,257 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AISB Consulting — AI-powered accounting, bookkeeping, tax, and business automation for small businesses. Platform-agnostic. Transparent pricing. Book a free consultation.">
   <title>AISB Consulting | AI-Powered Accounting & Business Services</title>
-
-  <!-- Open Graph -->
   <meta property="og:title" content="AISB Consulting | AI-Powered Accounting & Business Services">
   <meta property="og:description" content="Bookkeeping, tax, CFO advisory, and AI automation for small businesses. We work with your tools — Zoho, QuickBooks, Xero. Starting at $99/mo.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aisbconsulting.com">
   <meta property="og:image" content="https://aisbconsulting.com/logo.png">
-  <meta property="og:site_name" content="AI SB Consulting">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="AI SB Consulting | AI Voice Receptionist for Small Businesses">
-  <meta name="twitter:description" content="Done-for-you AI phone receptionist. Answers calls, books appointments, sends SMS — 24/7. Starting at $49/mo for salons, $99/mo for trades.">
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- ── TOP BAR ── -->
+<div class="topbar"></div>
+
 <!-- ── NAVIGATION ── -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="logo.png" alt="AISB Consulting" style="height:52px;width:auto;display:block;">
+      <img src="logo.png" alt="AISB Consulting">
       <span class="nav-brand">AISB Consulting</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
-    <div class="nav-links" id="navLinks">
+    <div class="nav-menu" id="navMenu">
       <a href="why-aisb.html">Why AISB?</a>
-      <div class="nav-dropdown">
-        <a href="services.html" class="nav-dropdown-trigger">Services <span class="arrow">&#9662;</span></a>
-        <div class="nav-dropdown-menu">
-          <div class="dropdown-grid">
-            <a href="services/bookkeeping.html" class="dropdown-item">
-              <span class="dropdown-icon">📚</span>
-              <div>
-                <span class="dropdown-title">Bookkeeping</span>
-                <span class="dropdown-tagline">Accurate books, every month</span>
-              </div>
-            </a>
-            <a href="services/cfo-advisory.html" class="dropdown-item">
-              <span class="dropdown-icon">📊</span>
-              <div>
-                <span class="dropdown-title">CFO Advisory</span>
-                <span class="dropdown-tagline">Strategic guidance for growth</span>
-              </div>
-            </a>
-            <a href="services/payroll-hr.html" class="dropdown-item">
-              <span class="dropdown-icon">💰</span>
-              <div>
-                <span class="dropdown-title">Payroll & HR</span>
-                <span class="dropdown-tagline">Payroll, compliance, done</span>
-              </div>
-            </a>
-            <a href="services/tax.html" class="dropdown-item">
-              <span class="dropdown-icon">🧾</span>
-              <div>
-                <span class="dropdown-title">Tax</span>
-                <span class="dropdown-tagline">Tax prep tailored to your business</span>
-              </div>
-            </a>
-            <a href="services/back-office-tech.html" class="dropdown-item">
-              <span class="dropdown-icon">⚙️</span>
-              <div>
-                <span class="dropdown-title">Back Office Technology</span>
-                <span class="dropdown-tagline">Systems that scale with you</span>
-              </div>
-            </a>
-            <a href="services/ai-efficiency-audit.html" class="dropdown-item">
-              <span class="dropdown-icon">🤖</span>
-              <div>
-                <span class="dropdown-title">AI Efficiency Audit</span>
-                <span class="dropdown-tagline">Find what AI can automate</span>
-              </div>
-            </a>
-            <a href="services/workflow-automation.html" class="dropdown-item">
-              <span class="dropdown-icon">🔄</span>
-              <div>
-                <span class="dropdown-title">Workflow Automation</span>
-                <span class="dropdown-tagline">Eliminate repetitive tasks</span>
-              </div>
-            </a>
-          </div>
+      <div class="nav-dd">
+        <button class="nav-dd-btn" onclick="this.parentElement.classList.toggle('open')">Services</button>
+        <div class="nav-dd-panel">
+          <a href="services/bookkeeping.html" class="dd-item">
+            <span class="dd-icon">📚</span>
+            <div><span class="dd-title">Bookkeeping</span><span class="dd-desc">Accurate books, every month</span></div>
+          </a>
+          <a href="services/cfo-advisory.html" class="dd-item">
+            <span class="dd-icon">📊</span>
+            <div><span class="dd-title">CFO Advisory</span><span class="dd-desc">Strategic guidance for growth</span></div>
+          </a>
+          <a href="services/payroll-hr.html" class="dd-item">
+            <span class="dd-icon">💰</span>
+            <div><span class="dd-title">Payroll & HR</span><span class="dd-desc">Payroll, compliance, done</span></div>
+          </a>
+          <a href="services/tax.html" class="dd-item">
+            <span class="dd-icon">🧾</span>
+            <div><span class="dd-title">Tax</span><span class="dd-desc">Tax prep tailored to your business</span></div>
+          </a>
+          <a href="services/back-office-tech.html" class="dd-item">
+            <span class="dd-icon">⚙️</span>
+            <div><span class="dd-title">Back Office Technology</span><span class="dd-desc">Systems that scale with you</span></div>
+          </a>
+          <a href="services/ai-efficiency-audit.html" class="dd-item">
+            <span class="dd-icon">🤖</span>
+            <div><span class="dd-title">AI Efficiency Audit</span><span class="dd-desc">Find what AI can automate</span></div>
+          </a>
+          <a href="services/workflow-automation.html" class="dd-item">
+            <span class="dd-icon">🔄</span>
+            <div><span class="dd-title">Workflow Automation</span><span class="dd-desc">Eliminate repetitive tasks</span></div>
+          </a>
         </div>
       </div>
       <a href="software.html">Software</a>
       <a href="pricing.html">Pricing</a>
       <a href="partners.html">Partners</a>
       <a href="about.html">About</a>
-      <a href="tel:7814861659" class="nav-cta" style="background:#1a2744;border:1px solid rgba(255,255,255,0.3);">📞 Call Demo</a>
-      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta">Book a Consultation</a>
+      <div class="nav-ctas">
+        <a href="tel:7814861659" class="nav-cta outline">📞 Call Demo</a>
+        <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta solid">Book a Consultation</a>
+      </div>
     </div>
   </div>
 </nav>
-<div class="accent-bar"></div>
 
 <!-- ── HERO ── -->
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>AI-Powered Accounting &amp; <span class="accent">Business Services</span> for Small Businesses</h1>
-      <p>Bookkeeping, tax, CFO advisory, and AI automation — all under one roof. We work with the tools you already use and layer our expertise on top. No forced migrations. No vendor lock-in.</p>
-      <div class="hero-btns">
-        <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary btn-lg">Book a Free Consultation</a>
-        <a href="services.html" class="btn btn-outline btn-lg">Explore Services →</a>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>AI-Powered Accounting &amp; <span class="hi">Business Services</span> for Small Businesses</h1>
+        <p class="hero-sub">Bookkeeping, tax, CFO advisory, and AI automation — all under one roof. We work with the tools you already use and layer our expertise on top. No forced migrations. No vendor lock-in.</p>
+        <div class="hero-btns">
+          <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary btn-lg">Book a Free Consultation</a>
+          <a href="services.html" class="btn btn-ghost btn-lg">Explore Services →</a>
+        </div>
+        <p class="hero-note"><strong>Starting at $99/mo</strong> · No long-term contracts · Platform-agnostic</p>
       </div>
-    </div>
-    <div class="hero-card">
-      <div class="card-title">What We Do</div>
-      <div class="hero-steps">
-        <div class="hero-step"><div class="dot">📚</div><span>Monthly bookkeeping &amp; reconciliation</span></div>
-        <div class="hero-step"><div class="dot">🧾</div><span>Tax preparation &amp; planning</span></div>
-        <div class="hero-step"><div class="dot">📊</div><span>CFO advisory &amp; cash flow strategy</span></div>
-        <div class="hero-step"><div class="dot">🤖</div><span>AI automation &amp; workflow optimization</span></div>
-        <div class="hero-step"><div class="dot">📞</div><span>AI Voice Receptionist software</span></div>
+      <div class="hero-panel">
+        <div class="label">Quick Snapshot</div>
+        <div class="hp-row">
+          <div class="hp-stat"><span class="val">7+</span><span class="lbl">Services under<br>one roof</span></div>
+          <div class="hp-stat"><span class="val">3</span><span class="lbl">Platforms<br>supported</span></div>
+          <div class="hp-stat"><span class="val">$99</span><span class="lbl">Starting<br>price/mo</span></div>
+        </div>
+        <div class="hp-steps">
+          <div class="hp-step"><span class="num">1</span> Monthly bookkeeping &amp; reconciliation</div>
+          <div class="hp-step"><span class="num">2</span> Tax preparation &amp; planning</div>
+          <div class="hp-step"><span class="num">3</span> CFO advisory &amp; cash flow strategy</div>
+          <div class="hp-step"><span class="num">4</span> AI automation &amp; voice receptionist</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── TRUST BAR ── -->
-<div class="stats-bar">
-  <div class="stats-grid">
-    <div class="stat-item"><span class="big">7+</span><span class="label">Services under<br>one roof</span></div>
-    <div class="stat-item"><span class="big">3</span><span class="label">Platforms supported<br>Zoho · QBO · Xero</span></div>
-    <div class="stat-item"><span class="big">AI</span><span class="label">First approach —<br>automate before we hire</span></div>
-    <div class="stat-item"><span class="big">$99</span><span class="label">Starting price<br>per month</span></div>
+<!-- ── TRUST STRIP ── -->
+<div class="trust">
+  <div class="trust-row">
+    <div class="trust-item"><span class="ti">🏢</span> 7+ Services Under One Roof</div>
+    <div class="trust-item"><span class="ti">💻</span> Zoho · QuickBooks · Xero</div>
+    <div class="trust-item"><span class="ti">🤖</span> AI-First Approach</div>
+    <div class="trust-item"><span class="ti">💲</span> Starting at $99/mo</div>
+    <div class="trust-item"><span class="ti">🔓</span> No Vendor Lock-In</div>
   </div>
 </div>
 
 <!-- ── SERVICES OVERVIEW ── -->
-<section class="section features">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">Our Services</div>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="tag">Our Services</span>
       <h2>Everything Your Business Needs to Run Smarter</h2>
       <p>From monthly bookkeeping to AI-powered automation — we handle it so you can focus on growth.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">📚</div>
+    <div class="card-grid cols-3">
+      <a href="services/bookkeeping.html" class="card">
+        <div class="c-icon">📚</div>
         <h3>Bookkeeping</h3>
         <p>Accurate monthly books, bank reconciliation, and financial statements. We keep your numbers clean so you always know where you stand.</p>
-        <a href="services/bookkeeping.html" style="color:#f97316;font-size:14px;font-weight:700;display:block;margin-top:12px;">Learn More →</a>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📊</div>
+        <span class="link">Learn More →</span>
+      </a>
+      <a href="services/cfo-advisory.html" class="card">
+        <div class="c-icon">📊</div>
         <h3>CFO Advisory</h3>
         <p>Cash flow planning, budgeting, KPI dashboards, and strategic guidance. Get the financial leadership your business needs without the full-time cost.</p>
-        <a href="services/cfo-advisory.html" style="color:#f97316;font-size:14px;font-weight:700;display:block;margin-top:12px;">Learn More →</a>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🧾</div>
+        <span class="link">Learn More →</span>
+      </a>
+      <a href="services/tax.html" class="card">
+        <div class="c-icon">🧾</div>
         <h3>Tax</h3>
         <p>Tax preparation, planning, and quarterly estimates. We minimize your liability and keep you compliant year-round.</p>
-        <a href="services/tax.html" style="color:#f97316;font-size:14px;font-weight:700;display:block;margin-top:12px;">Learn More →</a>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">💰</div>
+        <span class="link">Learn More →</span>
+      </a>
+      <a href="services/payroll-hr.html" class="card">
+        <div class="c-icon">💰</div>
         <h3>Payroll &amp; HR</h3>
         <p>Payroll processing, compliance, and HR basics. We handle the paperwork so your team gets paid on time, every time.</p>
-        <a href="services/payroll-hr.html" style="color:#f97316;font-size:14px;font-weight:700;display:block;margin-top:12px;">Learn More →</a>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🤖</div>
+        <span class="link">Learn More →</span>
+      </a>
+      <a href="services/ai-efficiency-audit.html" class="card">
+        <div class="c-icon">🤖</div>
         <h3>AI Efficiency Audit</h3>
         <p>We assess your workflows and identify exactly where AI can save you time and money. A clear roadmap, not a sales pitch.</p>
-        <a href="services/ai-efficiency-audit.html" style="color:#f97316;font-size:14px;font-weight:700;display:block;margin-top:12px;">Learn More →</a>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔄</div>
+        <span class="link">Learn More →</span>
+      </a>
+      <a href="services/workflow-automation.html" class="card">
+        <div class="c-icon">🔄</div>
         <h3>Workflow Automation</h3>
         <p>Eliminate repetitive tasks with custom AI workflows. From data entry to client follow-ups — if it's manual and repeatable, we automate it.</p>
-        <a href="services/workflow-automation.html" style="color:#f97316;font-size:14px;font-weight:700;display:block;margin-top:12px;">Learn More →</a>
-      </div>
+        <span class="link">Learn More →</span>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- ── WHY AISB TEASER ── -->
-<section class="section problem">
-  <div class="problem-inner">
-    <div class="eyebrow">Why Businesses Choose AISB</div>
-    <h2>We Work With Your Tools. Not Against Them.</h2>
-    <p>Most outsourced bookkeeping firms force you onto their platform. We don't. Whether you're on Zoho, QuickBooks, or Xero — we meet you where you are and layer our expertise on top.</p>
-    <p class="bold-stat">Platform-agnostic. AI-first. Transparent pricing. No vendor lock-in.</p>
-    <a href="why-aisb.html" class="btn btn-outline-dark" style="margin-top:20px;">Learn Why AISB →</a>
+<section class="proof">
+  <div class="proof-inner">
+    <div class="stars">★★★★★</div>
+    <blockquote>We work with your tools — not against them. Whether you're on Zoho, QuickBooks, or Xero, we meet you where you are and layer our expertise on top.</blockquote>
+    <div class="proof-stats">
+      <div class="proof-stat"><span class="v">Platform</span><span class="l">Agnostic</span></div>
+      <div class="proof-stat"><span class="v">AI-First</span><span class="l">Approach</span></div>
+      <div class="proof-stat"><span class="v">Zero</span><span class="l">Vendor Lock-In</span></div>
+    </div>
+    <div style="margin-top:28px"><a href="why-aisb.html" class="btn btn-ghost">Learn Why AISB →</a></div>
   </div>
 </section>
 
 <!-- ── AI VOICE SPOTLIGHT ── -->
-<section class="section features" style="background:#f8fafc;">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">Featured Software</div>
+<section class="sec bg-light">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="tag">Featured Software</span>
       <h2>AI Voice Receptionist</h2>
       <p>Your customers call. Nobody answers. They call your competitor. Our AI receptionist picks up every call in under 3 seconds, books appointments, and texts confirmations — 24/7.</p>
     </div>
-    <div class="steps-grid" style="margin-bottom:32px;">
-      <div class="step-card">
-        <div class="step-num">1</div>
+    <div class="steps">
+      <div class="step">
+        <div class="circle">1</div>
         <h3>Customer Calls</h3>
         <p>Any time, day or night.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
+      <div class="step">
+        <div class="circle">2</div>
         <h3>AI Picks Up</h3>
         <p>Under 3 seconds. Natural voice.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
+      <div class="step">
+        <div class="circle">3</div>
         <h3>Job Gets Booked</h3>
         <p>Details confirmed. SMS sent.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
+      <div class="step">
+        <div class="circle">4</div>
         <h3>You Get Notified</h3>
         <p>Full details via text. Done.</p>
       </div>
     </div>
-    <div class="text-center">
+    <div class="center mt-32">
       <a href="tel:7814861659" class="btn btn-primary">📞 Try Demo: (781) 486-1659</a>
-      <a href="software.html" class="btn btn-outline-dark" style="margin-left:12px;">Learn More →</a>
+      <a href="software.html" class="btn btn-ghost-dark" style="margin-left:12px;">Learn More →</a>
     </div>
   </div>
 </section>
 
+<!-- ── STATS BAR ── -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-row">
+      <div class="stat"><span class="big">$350+</span><span class="lbl">Lost per missed call<br>(average service job)</span></div>
+      <div class="stat"><span class="big">80%</span><span class="lbl">Of callers won't<br>leave a voicemail</span></div>
+      <div class="stat"><span class="big">24/7</span><span class="lbl">Coverage — nights,<br>weekends, holidays</span></div>
+      <div class="stat"><span class="big">$99</span><span class="lbl">Starting price<br>per month</span></div>
+    </div>
+  </div>
+</div>
+
 <!-- ── HOW IT WORKS (Client Onboarding) ── -->
-<section class="section how-it-works">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">How It Works</div>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="tag">How It Works</span>
       <h2>Getting Started Is Simple</h2>
     </div>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
+    <div class="steps">
+      <div class="step">
+        <div class="circle">1</div>
         <h3>Free Consultation</h3>
         <p>We learn about your business, your tools, and what's not working.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
+      <div class="step">
+        <div class="circle">2</div>
         <h3>Custom Setup</h3>
         <p>We configure everything — bookkeeping, integrations, automations — on your platform.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
+      <div class="step">
+        <div class="circle">3</div>
         <h3>Go Live</h3>
         <p>Your systems are running. Your books are current. Your AI is answering calls.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
+      <div class="step">
+        <div class="circle">4</div>
         <h3>Ongoing Support</h3>
         <p>Monthly reporting, quarterly reviews, and a dedicated team that knows your business.</p>
       </div>
@@ -267,31 +264,31 @@
 </section>
 
 <!-- ── INDUSTRIES ── -->
-<section class="section verticals">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">Industries We Serve</div>
+<section class="sec bg-light">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="tag">Industries We Serve</span>
       <h2>Built for the Businesses That Need It Most</h2>
       <p>We specialize in small businesses and startups that need real accounting and smart automation — not one-size-fits-all software.</p>
     </div>
-    <div class="verticals-grid">
-      <div class="vertical-card">
-        <div class="v-icon">✂️</div>
+    <div class="card-grid cols-4">
+      <div class="card teal">
+        <div class="c-icon">✂️</div>
         <h3>Salons &amp; Spas</h3>
         <p>Bookkeeping, payroll, and AI voice booking built for beauty businesses.</p>
       </div>
-      <div class="vertical-card">
-        <div class="v-icon">💍</div>
+      <div class="card teal">
+        <div class="c-icon">💍</div>
         <h3>Bridal &amp; Wedding</h3>
         <p>Consultation scheduling, financial tracking, and seasonal cash flow planning.</p>
       </div>
-      <div class="vertical-card">
-        <div class="v-icon">🔧</div>
+      <div class="card teal">
+        <div class="c-icon">🔧</div>
         <h3>Trades &amp; Home Services</h3>
         <p>Job costing, emergency triage, and AI receptionists that book while you work.</p>
       </div>
-      <div class="vertical-card">
-        <div class="v-icon">🚀</div>
+      <div class="card teal">
+        <div class="c-icon">🚀</div>
         <h3>Startups</h3>
         <p>Zoho-based bookkeeping, burn rate tracking, and investor-ready financials.</p>
       </div>
@@ -300,22 +297,20 @@
 </section>
 
 <!-- ── PRICING TEASER ── -->
-<section class="section pricing" style="padding-bottom:48px;">
-  <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">Simple, Transparent Pricing</div>
+<section class="sec-sm">
+  <div class="wrap center">
+    <div class="sec-header">
+      <span class="tag">Simple, Transparent Pricing</span>
       <h2>Plans That Fit Your Business</h2>
       <p>No hidden fees. No long-term contracts. Services start at $99/month.</p>
     </div>
-    <div class="text-center">
-      <a href="pricing.html" class="btn btn-primary btn-lg">View All Pricing →</a>
-    </div>
+    <a href="pricing.html" class="btn btn-primary btn-lg">View All Pricing →</a>
   </div>
 </section>
 
 <!-- ── CTA BANNER ── -->
-<section class="cta-banner">
-  <div class="container">
+<section class="cta">
+  <div class="wrap">
     <h2>Ready to Run Your Business Smarter?</h2>
     <p>Book a free consultation and find out how AISB can streamline your accounting, automate your workflows, and save you time.</p>
     <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-white btn-lg">Book a Free Consultation →</a>
@@ -330,38 +325,40 @@
       <p>AI-powered accounting, bookkeeping, tax, and business automation for small businesses. Platform-agnostic. Transparent pricing.</p>
     </div>
     <div class="footer-col">
-      <h4>SERVICES</h4>
+      <h4>Services</h4>
       <a href="services/bookkeeping.html">Bookkeeping</a>
       <a href="services/cfo-advisory.html">CFO Advisory</a>
       <a href="services/tax.html">Tax</a>
       <a href="services/payroll-hr.html">Payroll &amp; HR</a>
+      <a href="services/back-office-tech.html">Back Office Tech</a>
       <a href="services/ai-efficiency-audit.html">AI Efficiency Audit</a>
       <a href="services/workflow-automation.html">Workflow Automation</a>
     </div>
     <div class="footer-col">
-      <h4>EXPLORE</h4>
+      <h4>Explore</h4>
       <a href="why-aisb.html">Why AISB?</a>
       <a href="software.html">Software</a>
       <a href="pricing.html">Pricing</a>
       <a href="partners.html">Partners</a>
       <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
     <div class="footer-col">
-      <h4>CONTACT</h4>
-      <a href="mailto:aisbconsulting.com@gmail.com">aisbconsulting.com@gmail.com</a>
-      <a href="tel:7814861659">Demo: (781) 486-1659</a>
+      <h4>Contact</h4>
+      <a href="mailto:info@aisbconsulting.com">info@aisbconsulting.com</a>
+      <a href="tel:7816260050">(781) 626-0050</a><a href="tel:7814861659">Demo Line: (781) 486-1659</a>
       <a href="contact.html">Contact Us</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 AISB Consulting. All rights reserved.</span>
+    <span>&copy; 2026 AISB Consulting. All rights reserved.</span>
     <span>Built by Andrew Curtis</span>
   </div>
 </footer>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function() {
-    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('navMenu').classList.toggle('open');
   });
 </script>
 </body>
