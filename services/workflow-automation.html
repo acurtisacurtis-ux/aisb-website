@@ -3,73 +3,484 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AISB Consulting workflow automation — eliminate repetitive tasks with custom AI workflows. From data entry to client follow-ups.">
-  <title>Workflow Automation | AISB Consulting</title>
+
+  <!-- SEO -->
+  <title>AI Workflow Automation for Small Businesses | AISB Consulting</title>
+  <meta name="description" content="Replace 10-13 hours of manual back-office data entry per month with AI workflow automation. Built for $5-20M SMBs using Zoho Books, QuickBooks, or Xero. Free AI Efficiency Audit — keep the report whether you buy or not.">
+  <meta name="keywords" content="AI workflow automation, AP invoice automation, accounts payable automation, AI for bookkeepers, bookkeeping automation, vendor setup automation, W-9 automation, 1099 automation, SMB accounting automation, small business AI, n8n automation, Zoho Books automation">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aisbconsulting.com/services/workflow-automation">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aisbconsulting.com/services/workflow-automation">
+  <meta property="og:title" content="AI Workflow Automation for Back-Office Operations | AISB Consulting">
+  <meta property="og:description" content="Three AI workflows that replace 10-13 hours/mo of manual data entry — AP, customer setup, and vendor setup. Built for $5-20M SMBs. Start with a free 30-minute AI Efficiency Audit.">
+  <meta property="og:image" content="https://aisbconsulting.com/logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Workflow Automation for Back-Office Operations | AISB Consulting">
+  <meta name="twitter:description" content="Replace 10-13 hrs/mo of manual data entry across AP, customer setup, and vendor setup. Free AI Efficiency Audit — yours to keep.">
+  <meta name="twitter:image" content="https://aisbconsulting.com/logo.png">
+
+  <!-- Favicon + Fonts -->
   <link rel="icon" type="image/png" href="../logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=20260414b">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Schema.org: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "AI Workflow Automation",
+    "provider": {
+      "@type": "Organization",
+      "name": "AISB Consulting",
+      "url": "https://aisbconsulting.com",
+      "logo": "https://aisbconsulting.com/logo.png",
+      "telephone": "+1-781-626-0050",
+      "email": "info@aisbconsulting.com"
+    },
+    "areaServed": "United States",
+    "description": "Custom AI workflows that replace manual back-office data entry — accounts payable, customer setup, and vendor setup — for small and mid-sized businesses using Zoho Books, QuickBooks Online, or Xero.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "AI Workflow #1 — AP Invoice Automation",
+        "description": "AI reads invoice PDFs, extracts line items, and creates bills in your accounting system. Frees roughly 7 hours per month for the sweet-spot SMB."
+      },
+      {
+        "@type": "Offer",
+        "name": "AI Workflow #2 — Customer Setup from Service Agreement",
+        "description": "AI reads signed service agreements and creates customer records in your accounting system, flagging missing fields. Roughly 1-2 hours per month saved plus faster speed-to-first-invoice."
+      },
+      {
+        "@type": "Offer",
+        "name": "AI Workflow #3 — Vendor Setup + W-9 Reconciliation",
+        "description": "AI reads both vendor agreement and W-9, reconciles, and auto-emails the vendor on name mismatch. Roughly 2-4 hours per month plus year-end 1099 filing becomes a review step."
+      }
+    ],
+    "relatedService": [
+      {
+        "@type": "Service",
+        "name": "Bookkeeping",
+        "url": "https://aisbconsulting.com/services/bookkeeping"
+      },
+      {
+        "@type": "Service",
+        "name": "AI Efficiency Audit",
+        "url": "https://aisbconsulting.com/services/ai-efficiency-audit"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does this replace my bookkeeper?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. It replaces the manual data-entry work your bookkeeper currently does — typing invoices into Zoho, setting up new customers, chasing W-9s. Your bookkeeper becomes a reviewer, not a typist. They get time back for reconciliation, month-end close, and the advisory work you actually hired them for."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why not just use Bill.com or Tipalti?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bill.com and Tipalti help a human do the work faster. AISB replaces the human's data-entry work entirely. They charge per-user, forever, and you never own the workflow. We're a one-time build plus a flat retainer — and your team scaling 3 to 5 users doesn't change your cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What accounting systems do you support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zoho Books, QuickBooks Online, and Xero. The AI workflow is system-agnostic — we adjust the posting layer for whichever you use. Records are created in your existing accounting system's native UI, so there's no new interface for your team to learn."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the AI approving payments autonomously?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The AI creates the record in your accounting system. Your bookkeeper reviews it in the system's native UI before it's paid or finalized — the same review step they already do today, minus the manual typing that took 6-10 minutes per invoice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the pricing model?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One-time build fee of $5,000-$10,000 per workflow (or a bundle discount for all three), plus a flat monthly retainer of $150-$300 per workflow for ongoing monitoring, tuning, and support. No per-seat licensing. You own the workflow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the AI Efficiency Audit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A free 30-minute working call where we walk through your back-office workflow — AR, AP, vendor setup, month-end close. You receive a written 5-7 page audit PDF identifying which AI workflow (or a different automation entirely) would deliver the highest ROI for your specific operation, with a concrete ROI number. You keep the audit whether you hire us or not."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <div class="topbar"></div>
-<nav class="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo"><img src="../logo.png" alt="AISB Consulting"><span class="nav-brand">AISB Consulting</span></a><button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button><div class="nav-menu" id="navMenu"><a href="../why-aisb.html">Why AISB?</a><div class="nav-dd"><button class="nav-dd-btn on" onclick="this.parentElement.classList.toggle('open')">Services</button><div class="nav-dd-panel"><a href="bookkeeping.html" class="dd-item"><span class="dd-icon">📚</span><div><span class="dd-title">Bookkeeping</span><span class="dd-desc">Accurate books, every month</span></div></a><a href="cfo-advisory.html" class="dd-item"><span class="dd-icon">📊</span><div><span class="dd-title">CFO Advisory</span><span class="dd-desc">Strategic guidance for growth</span></div></a><a href="payroll-hr.html" class="dd-item"><span class="dd-icon">💰</span><div><span class="dd-title">Payroll & HR</span><span class="dd-desc">Payroll, compliance, done</span></div></a><a href="tax.html" class="dd-item"><span class="dd-icon">🧾</span><div><span class="dd-title">Tax</span><span class="dd-desc">Tax prep tailored to your business</span></div></a><a href="workflow-automation.html" class="dd-item"><span class="dd-icon">🔄</span><div><span class="dd-title">Workflow Automation</span><span class="dd-desc">Eliminate repetitive tasks</span></div></a><a href="ai-efficiency-audit.html" class="dd-item"><span class="dd-icon">🤖</span><div><span class="dd-title">AI Efficiency Audit</span><span class="dd-desc">Find what AI can automate</span></div></a><a href="back-office-tech.html" class="dd-item"><span class="dd-icon">⚙️</span><div><span class="dd-title">Back Office Technology</span><span class="dd-desc">Systems that scale with you</span></div></a></div></div><a href="../software.html">Software</a><a href="../pricing.html">Pricing</a><a href="../partners.html">Partners</a><a href="../about.html">About</a><div class="nav-ctas"><a href="tel:7814861659" class="nav-cta outline">📞 Call Demo</a><a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta solid">Book a Consultation</a></div></div></div></nav>
+<nav class="nav"><div class="nav-inner"><a href="../index.html" class="nav-logo"><img src="../logo.png" alt="AISB Consulting"><span class="nav-brand">AISB Consulting</span></a><button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button><div class="nav-menu" id="navMenu"><a href="../why-aisb.html">Why AISB?</a><div class="nav-dd"><button class="nav-dd-btn on" onclick="this.parentElement.classList.toggle('open')">Services</button><div class="nav-dd-panel"><a href="bookkeeping.html" class="dd-item"><span class="dd-icon">📚</span><div><span class="dd-title">Bookkeeping</span><span class="dd-desc">Accurate books, every month</span></div></a><a href="cfo-advisory.html" class="dd-item"><span class="dd-icon">📊</span><div><span class="dd-title">CFO Advisory</span><span class="dd-desc">Strategic guidance for growth</span></div></a><a href="payroll-hr.html" class="dd-item"><span class="dd-icon">💰</span><div><span class="dd-title">Payroll & HR</span><span class="dd-desc">Payroll, compliance, done</span></div></a><a href="tax.html" class="dd-item"><span class="dd-icon">🧾</span><div><span class="dd-title">Tax</span><span class="dd-desc">Tax prep tailored to your business</span></div></a><a href="back-office-tech.html" class="dd-item"><span class="dd-icon">⚙️</span><div><span class="dd-title">Back Office Technology</span><span class="dd-desc">Systems that scale with you</span></div></a><a href="ai-efficiency-audit.html" class="dd-item"><span class="dd-icon">🤖</span><div><span class="dd-title">AI Efficiency Audit</span><span class="dd-desc">Find what AI can automate</span></div></a><a href="workflow-automation.html" class="dd-item"><span class="dd-icon">🔄</span><div><span class="dd-title">Workflow Automation</span><span class="dd-desc">Eliminate repetitive tasks</span></div></a></div></div><a href="../software.html">Software</a><a href="../pricing.html">Pricing</a><a href="../partners.html">Partners</a><a href="../about.html">About</a><div class="nav-ctas"><a href="tel:7814861659" class="nav-cta outline">📞 Call Demo</a><a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="nav-cta solid">Book a Consultation</a></div></div></div></nav>
 
+<!-- ============================================================
+     1. HERO
+============================================================ -->
 <section class="page-hero">
-  <h1>🔄 Workflow Automation</h1>
-  <p>If it's manual and repeatable, we automate it — custom AI workflows built for your business.</p>
+  <h1>🔄 AI Workflow Automation for Back-Office Operations</h1>
+  <p style="max-width:880px;margin:0 auto;font-size:19px;line-height:1.5">Replace <strong>10-13 hours</strong> of manual data entry per month with AI workflows that work inside Zoho Books, QuickBooks, or Xero. Built for <strong>$5-20M SMBs</strong> where one more back-office hire costs $48-67K and the bookkeeper's time is already maxed.</p>
+  <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+    <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary btn-lg">🔥 Book Free AI Efficiency Audit</a>
+    <a href="#bundle" class="btn btn-lg" style="background:transparent;color:#f1f5f9;border:2px solid #f1f5f9">See the 3 workflows ↓</a>
+  </div>
+  <p style="margin-top:18px;font-size:14px;opacity:.75">Free. 30 minutes. You keep the audit PDF whether you hire us or not.</p>
 </section>
 
+<!-- ============================================================
+     2. THE PROBLEM — The Bookkeeper Trap
+============================================================ -->
 <section class="sec">
+  <div class="wrap" style="max-width:960px">
+    <h2 style="text-align:center">The Bookkeeper Trap</h2>
+    <p style="text-align:center;font-size:18px;max-width:780px;margin:16px auto 32px">You hired a bookkeeper to close your books, reconcile accounts, and catch problems early. Instead, they spend <strong>10+ hours a week</strong> typing invoices, chasing W-9s, and setting up new customers. <em>That's not bookkeeping — that's data entry.</em></p>
+
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:28px;margin:24px 0">
+      <h3 style="margin-top:0">Where the hours go at a typical $5-20M SMB:</h3>
+      <ul class="svc-list" style="margin-top:12px">
+        <li><span class="chk">⏱️</span> <strong>6-10 minutes per invoice</strong> × 30-80 invoices/month = 3-13 hours/mo on AP alone</li>
+        <li><span class="chk">⏱️</span> <strong>15-30 minutes per new customer setup</strong> from a signed Service Agreement</li>
+        <li><span class="chk">⏱️</span> <strong>January 1099 week</strong> — the single most stressful week of the bookkeeper's year chasing missing W-9s</li>
+        <li><span class="chk">⏱️</span> <strong>Manual reconciliation</strong> of vendor names where the Agreement and W-9 don't match</li>
+      </ul>
+      <p style="margin-top:16px;margin-bottom:0"><strong>The trap:</strong> hire another AP/AR clerk ($48-67K fully loaded), outsource to a fractional service that still needs you to type the data, or subscribe to SaaS tools that help a human do the work faster — none of which replace the manual work itself.</p>
+    </div>
+
+    <p style="text-align:center;font-style:italic;margin-top:24px">There's a fourth option. AISB builds it.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. THE BUNDLE — Three AI Workflows
+============================================================ -->
+<section class="sec" id="bundle" style="background:#0f172a;color:#f1f5f9">
   <div class="wrap">
-    <div class="svc-grid">
-      <div>
-        <h2>Stop Doing the Same Thing Over and Over</h2>
-        <p>Data entry, client follow-ups, invoice reminders, lead capture, review requests — these are the tasks that eat your day. They're important, but they don't need a human. AISB builds custom AI workflows that handle them automatically, accurately, and around the clock.</p>
-        <p>We don't sell you a tool and walk away. We build the workflow, test it, train your team, and provide 30 days of post-launch support.</p>
-        <h3 style="margin-top:24px">What We Can Do For You</h3>
-        <ul class="svc-list">
-          <li><span class="chk">✓</span> Custom workflow design for your process</li>
-          <li><span class="chk">✓</span> Full implementation &amp; testing</li>
-          <li><span class="chk">✓</span> Integration with your existing tools</li>
-          <li><span class="chk">✓</span> Team training &amp; documentation</li>
-          <li><span class="chk">✓</span> 30-day post-launch support</li>
-          <li><span class="chk">✓</span> Performance monitoring &amp; optimization</li>
-        </ul>
-        <h3 style="margin-top:24px">Common Automations We Build</h3>
-        <ul class="svc-list">
-          <li><span class="chk">→</span> Automated client follow-up sequences</li>
-          <li><span class="chk">→</span> Invoice generation &amp; payment reminders</li>
-          <li><span class="chk">→</span> Lead capture &amp; CRM pipeline automation</li>
-          <li><span class="chk">→</span> Review request workflows</li>
-          <li><span class="chk">→</span> Data entry &amp; document processing</li>
-          <li><span class="chk">→</span> Reporting &amp; dashboard automation</li>
-        </ul>
-        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary">Get a Quote</a>
+    <h2 style="text-align:center;color:#f1f5f9">Three AI Workflows. One Back Office. Compound Savings.</h2>
+    <p style="text-align:center;color:#cbd5e1;max-width:780px;margin:16px auto 40px;font-size:17px">Each workflow replaces a different manual task your bookkeeper does today. Together, they return <strong style="color:#fbbf24">~10-13 hours per month</strong> to the same person — without adding headcount.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:24px">
+      <!-- Workflow 1 card -->
+      <div style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px">
+        <div style="font-size:13px;color:#fbbf24;font-weight:600;letter-spacing:1px">AI WORKFLOW #1</div>
+        <h3 style="margin:8px 0 12px;color:#f1f5f9">AP Invoice Automation</h3>
+        <p style="color:#cbd5e1;font-size:15px;line-height:1.5">Invoice PDF in. Zoho bill out. AI reads, extracts, posts.</p>
+        <div style="margin-top:16px;padding:12px;background:#0f172a;border-radius:8px;text-align:center">
+          <div style="font-size:22px;color:#fbbf24;font-weight:700">~7 hrs/mo</div>
+          <div style="font-size:12px;color:#94a3b8">returned</div>
         </div>
       </div>
-      <div class="svc-sidebar">
-        <h3>Pricing</h3>
-        <div class="price">Custom Quote</div>
-        <div class="sub">Per workflow · Complexity-based</div>
-        <hr class="price-div">
-        <div class="price-list">
-          <div class="price-feat"><span class="chk">✓</span> Custom design &amp; build</div>
-          <div class="price-feat"><span class="chk">✓</span> Testing &amp; QA</div>
-          <div class="price-feat"><span class="chk">✓</span> Training &amp; handoff</div>
-          <div class="price-feat"><span class="chk">✓</span> 30-day support included</div>
+      <!-- Workflow 2 card -->
+      <div style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px">
+        <div style="font-size:13px;color:#fbbf24;font-weight:600;letter-spacing:1px">AI WORKFLOW #2</div>
+        <h3 style="margin:8px 0 12px;color:#f1f5f9">Customer Setup</h3>
+        <p style="color:#cbd5e1;font-size:15px;line-height:1.5">Service Agreement in. Zoho customer out. Faster first invoice.</p>
+        <div style="margin-top:16px;padding:12px;background:#0f172a;border-radius:8px;text-align:center">
+          <div style="font-size:22px;color:#fbbf24;font-weight:700">~1-2 hrs/mo</div>
+          <div style="font-size:12px;color:#94a3b8">+ faster cash</div>
         </div>
-        <hr class="price-div">
-        <p style="font-size:13px;color:#64748b">Monthly retainers available for ongoing automation needs.</p>
-        <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary mt-24" style="width:100%;justify-content:center">Get a Quote</a>
+      </div>
+      <!-- Workflow 3 card -->
+      <div style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px">
+        <div style="font-size:13px;color:#fbbf24;font-weight:600;letter-spacing:1px">AI WORKFLOW #3</div>
+        <h3 style="margin:8px 0 12px;color:#f1f5f9">Vendor Setup + W-9</h3>
+        <p style="color:#cbd5e1;font-size:15px;line-height:1.5">Agreement + W-9 in. Reconciled vendor record out. 1099-ready.</p>
+        <div style="margin-top:16px;padding:12px;background:#0f172a;border-radius:8px;text-align:center">
+          <div style="font-size:22px;color:#fbbf24;font-weight:700">~2-4 hrs/mo</div>
+          <div style="font-size:12px;color:#94a3b8">+ clean 1099s</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta"><div class="wrap"><h2>Ready to Automate the Repetitive Work?</h2><p>Book a free consultation and tell us what's eating your time.</p><a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-white btn-lg">Book a Free Consultation →</a></div></section>
+<!-- ============================================================
+     4. AI Workflow #1 — AP Invoice Automation
+============================================================ -->
+<section class="sec">
+  <div class="wrap" style="max-width:960px">
+    <div style="font-size:13px;color:#0ea5e9;font-weight:700;letter-spacing:2px">AI WORKFLOW #1</div>
+    <h2 style="margin-top:8px">AP Invoice Automation</h2>
+    <p style="font-size:19px;color:#475569;margin-bottom:32px"><strong>Vendor invoice in. Zoho bill out.</strong></p>
 
-<footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="logo-text">AISB <span>CONSULTING</span></div><p>AI-powered accounting, bookkeeping, tax, and business automation for small businesses.</p></div><div class="footer-col"><h4>Services</h4><a href="bookkeeping.html">Bookkeeping</a><a href="cfo-advisory.html">CFO Advisory</a><a href="tax.html">Tax</a><a href="payroll-hr.html">Payroll &amp; HR</a><a href="back-office-tech.html">Back Office Tech</a><a href="ai-efficiency-audit.html">AI Efficiency Audit</a><a href="workflow-automation.html">Workflow Automation</a></div><div class="footer-col"><h4>Explore</h4><a href="../why-aisb.html">Why AISB?</a><a href="../software.html">Software</a><a href="../pricing.html">Pricing</a><a href="../partners.html">Partners</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div><div class="footer-col"><h4>Contact</h4><a href="mailto:info@aisbconsulting.com">info@aisbconsulting.com</a><a href="tel:7816260050">(781) 626-0050</a><a href="tel:7814861659">Demo Line: (781) 486-1659</a><a href="../contact.html">Contact Us</a></div></div><div class="footer-bottom"><span>&copy; 2026 AISB Consulting. All rights reserved.</span><span>Built by Andrew Curtis</span></div></footer>
+    <div style="display:grid;grid-template-columns:1fr;gap:24px">
+      <div style="background:#fef2f2;border-left:4px solid #ef4444;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#991b1b">The Pain</h3>
+        <p style="margin-bottom:0">6-10 minutes per invoice. 30-80 invoices a month at the sweet spot. That's <strong>2-4 hours every week</strong> your bookkeeper spends typing numbers that already exist on a PDF.</p>
+      </div>
+      <div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#1e40af">The Build</h3>
+        <p>AI reads the invoice PDF → extracts vendor, invoice #, dates, line items, totals → creates the bill in Zoho Books (or QuickBooks Online / Xero) → logs the record to an independent audit trail → emails your bookkeeper a link to review in the accounting system's native UI.</p>
+        <p style="margin-bottom:0"><em>Your bookkeeper never stops being the reviewer. They just stop being the typist.</em></p>
+      </div>
+      <div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#14532d">The Result</h3>
+        <p><strong>~7 hours per month returned</strong> to the person who runs your back office. Plus audit-ready records every month — the independent log survives migrations between accounting systems.</p>
+        <p style="margin-bottom:0"><strong>Direct-fit ICP:</strong> $5-20M revenue, 30-80 invoices/month, running Zoho / QBO / Xero.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;text-align:center">
+      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary">Book the Audit →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. AI Workflow #2 — Customer Setup
+============================================================ -->
+<section class="sec" style="background:#f8fafc">
+  <div class="wrap" style="max-width:960px">
+    <div style="font-size:13px;color:#0ea5e9;font-weight:700;letter-spacing:2px">AI WORKFLOW #2</div>
+    <h2 style="margin-top:8px">Customer Setup from Service Agreement</h2>
+    <p style="font-size:19px;color:#475569;margin-bottom:32px"><strong>Signed Service Agreement in. Zoho customer out.</strong></p>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:24px">
+      <div style="background:#fef2f2;border-left:4px solid #ef4444;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#991b1b">The Pain</h3>
+        <p style="margin-bottom:0">Sales closes a deal. The signed agreement sits in an inbox. Your bookkeeper eventually chases it down, reads it line-by-line, types it into Zoho — and hopes the billing contact is actually in the agreement (it often isn't). Days pass before the first invoice goes out. Cash flow suffers.</p>
+      </div>
+      <div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#1e40af">The Build</h3>
+        <p>AI reads the signed Service Agreement → extracts legal name, DBA, billing address, payment terms, billing contact, tax status → creates the customer record in Zoho Books → flags any missing fields in the review email so your bookkeeper knows what to chase before the first invoice.</p>
+        <p style="margin-bottom:0"><em>Works with or without a CRM.</em> No HubSpot, Salesforce, or CRM migration required.</p>
+      </div>
+      <div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#14532d">The Result</h3>
+        <p><strong>~1-2 hours per month returned</strong> plus <strong>faster speed-to-first-invoice</strong> — which means cash in the door days sooner. Clean customer master data from day one.</p>
+        <p style="margin-bottom:0"><em>Lower-volume than AP, but high-leverage: a new-customer setup delay is a direct hit to cash flow.</em></p>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;text-align:center">
+      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary">Book the Audit →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. AI Workflow #3 — Vendor Setup + W-9
+============================================================ -->
+<section class="sec">
+  <div class="wrap" style="max-width:960px">
+    <div style="font-size:13px;color:#0ea5e9;font-weight:700;letter-spacing:2px">AI WORKFLOW #3</div>
+    <h2 style="margin-top:8px">Vendor Setup + W-9 Reconciliation</h2>
+    <p style="font-size:19px;color:#475569;margin-bottom:32px"><strong>Vendor Agreement + W-9 in. Reconciled vendor record + clean 1099 data out.</strong></p>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:24px">
+      <div style="background:#fef2f2;border-left:4px solid #ef4444;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#991b1b">The Pain</h3>
+        <p>Two documents to reconcile. The legal name on the vendor agreement rarely matches the W-9 exactly. Your bookkeeper defers vendor setup to the first invoice, files the W-9 somewhere (or not at all), then spends <strong>every January</strong> chasing missing W-9s and reconciling names before filing 1099s.</p>
+        <p style="margin-bottom:0">The single most stressful week of the bookkeeper's year — avoidable entirely.</p>
+      </div>
+      <div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#1e40af">The Build</h3>
+        <p>AI reads <strong>both</strong> the vendor agreement and the W-9 → extracts company info from each → <strong>reconciles</strong> (W-9 takes precedence on legal name and tax ID fields, since that's what the IRS sees) → auto-emails the vendor if the names mismatch and requests confirmation → TIN-validates, dedups, and creates the vendor record in Zoho with the W-9 as the source of truth.</p>
+      </div>
+      <div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:20px;border-radius:6px">
+        <h3 style="margin-top:0;color:#14532d">The Result</h3>
+        <p><strong>~2-4 hours per month returned.</strong> Plus <strong>year-end 1099 filing becomes a review step</strong> — the 1099 list writes itself from the audit log your bookkeeper has been building all year.</p>
+        <p style="margin-bottom:0"><em>The workflow that makes experienced bookkeepers lean forward.</em> January 1099 week becomes a non-event.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;text-align:center">
+      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-primary">Book the Audit →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. COMPOUND VALUE + CFO MATH
+============================================================ -->
+<section class="sec" style="background:linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);color:#f1f5f9">
+  <div class="wrap" style="max-width:880px;text-align:center">
+    <h2 style="color:#f1f5f9;font-size:36px">~10-13 Hours Per Month. One Person. Three Workflows.</h2>
+    <p style="color:#cbd5e1;font-size:18px;max-width:700px;margin:16px auto 32px">A full business day returned every month to the person who runs your back office. No new headcount. No new UI. No per-seat licensing that scales with your team.</p>
+
+    <table style="width:100%;max-width:640px;margin:24px auto;border-collapse:collapse;background:#1e293b;border-radius:12px;overflow:hidden">
+      <thead>
+        <tr style="background:#0f172a">
+          <th style="padding:14px;text-align:left;color:#fbbf24;font-size:14px">Workflow</th>
+          <th style="padding:14px;text-align:right;color:#fbbf24;font-size:14px">Hours Returned / Month</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-top:1px solid #334155"><td style="padding:14px">AI Workflow #1 — AP Invoice Automation</td><td style="padding:14px;text-align:right;font-weight:600">~7 hrs</td></tr>
+        <tr style="border-top:1px solid #334155"><td style="padding:14px">AI Workflow #2 — Customer Setup</td><td style="padding:14px;text-align:right;font-weight:600">~1-2 hrs</td></tr>
+        <tr style="border-top:1px solid #334155"><td style="padding:14px">AI Workflow #3 — Vendor Setup + W-9</td><td style="padding:14px;text-align:right;font-weight:600">~2-4 hrs</td></tr>
+        <tr style="border-top:2px solid #fbbf24;background:#0f172a"><td style="padding:14px;font-weight:700;color:#fbbf24">Combined (same person)</td><td style="padding:14px;text-align:right;font-weight:700;color:#fbbf24">~10-13 hrs/mo</td></tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:40px;padding:32px;background:rgba(251,191,36,.1);border:2px solid #fbbf24;border-radius:12px;max-width:720px;margin-left:auto;margin-right:auto">
+      <div style="font-size:14px;color:#fbbf24;font-weight:700;letter-spacing:2px;margin-bottom:12px">💡 THE CFO MATH</div>
+      <p style="font-size:22px;line-height:1.4;margin:0;color:#f1f5f9;font-weight:500"><em>One avoided AP/AR clerk hire ($48-67K fully loaded) = <strong style="color:#fbbf24">15+ years of AISB operation paid for.</strong></em></p>
+    </div>
+
+    <div style="margin-top:32px">
+      <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-white btn-lg">🔥 Book Free AI Efficiency Audit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8. WHY AISB vs. Bill.com / Tipalti
+============================================================ -->
+<section class="sec">
+  <div class="wrap" style="max-width:1000px">
+    <h2 style="text-align:center">Why AISB vs. Bill.com, Tipalti, or Per-Seat SaaS</h2>
+    <p style="text-align:center;color:#64748b;max-width:760px;margin:12px auto 32px;font-size:17px">The SaaS tools help a human do the work faster. We replace the manual work itself. Different solutions, different economics.</p>
+
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden">
+        <thead>
+          <tr style="background:#f8fafc">
+            <th style="padding:16px;text-align:left;font-size:14px;color:#475569;border-bottom:2px solid #e2e8f0"></th>
+            <th style="padding:16px;text-align:center;font-size:14px;color:#0ea5e9;border-bottom:2px solid #e2e8f0;font-weight:700">AISB</th>
+            <th style="padding:16px;text-align:center;font-size:14px;color:#64748b;border-bottom:2px solid #e2e8f0;font-weight:700">Bill.com / Tipalti / SaaS Tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f1f5f9">
+            <td style="padding:14px;font-weight:600">Structure</td>
+            <td style="padding:14px;text-align:center">One-time build + flat monthly retainer</td>
+            <td style="padding:14px;text-align:center;color:#64748b">Recurring per-seat license, forever</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f1f5f9;background:#f8fafc">
+            <td style="padding:14px;font-weight:600">Scales with your team</td>
+            <td style="padding:14px;text-align:center;color:#22c55e;font-weight:700">✅ Flat</td>
+            <td style="padding:14px;text-align:center;color:#ef4444;font-weight:700">❌ +67% when you go 3 → 5 users</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f1f5f9">
+            <td style="padding:14px;font-weight:600">Replaces the human's manual work</td>
+            <td style="padding:14px;text-align:center;color:#22c55e;font-weight:700">✅ Yes</td>
+            <td style="padding:14px;text-align:center;color:#ef4444;font-weight:700">❌ Helps a human do it faster</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f1f5f9;background:#f8fafc">
+            <td style="padding:14px;font-weight:600">Works with QBO / Xero / Zoho</td>
+            <td style="padding:14px;text-align:center;color:#22c55e;font-weight:700">✅ Any of them</td>
+            <td style="padding:14px;text-align:center;color:#64748b">Depends on tier</td>
+          </tr>
+          <tr>
+            <td style="padding:14px;font-weight:600">You own the workflow</td>
+            <td style="padding:14px;text-align:center;color:#22c55e;font-weight:700">✅ Yes</td>
+            <td style="padding:14px;text-align:center;color:#ef4444;font-weight:700">❌ Rented</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="text-align:center;color:#64748b;margin-top:24px;font-size:15px"><em>Bill.com is a good product. It just doesn't solve the same problem. We replace the operator's work; they augment it.</em></p>
+  </div>
+</section>
+
+<!-- ============================================================
+     9. PRICING
+============================================================ -->
+<section class="sec" style="background:#f8fafc">
+  <div class="wrap" style="max-width:1000px">
+    <h2 style="text-align:center">Pricing</h2>
+    <p style="text-align:center;color:#64748b;max-width:720px;margin:12px auto 32px;font-size:17px">Transparent. Flat. Owns-the-work.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:28px">
+        <h3 style="margin-top:0">Single Workflow</h3>
+        <div class="price" style="margin-bottom:8px">$5K-$10K</div>
+        <div class="sub">One-time build</div>
+        <hr class="price-div">
+        <p><strong>$150-$300/mo</strong> retainer for monitoring, tuning, and support.</p>
+        <p style="color:#64748b;font-size:14px">Pick any one of the three workflows. Start with your highest-volume pain point.</p>
+      </div>
+      <div style="background:#0f172a;color:#f1f5f9;border:2px solid #fbbf24;border-radius:12px;padding:28px;position:relative">
+        <div style="position:absolute;top:-12px;right:20px;background:#fbbf24;color:#0f172a;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700">BEST VALUE</div>
+        <h3 style="margin-top:0;color:#f1f5f9">The Bundle (all 3)</h3>
+        <div class="price" style="margin-bottom:8px;color:#fbbf24">Discounted</div>
+        <div class="sub" style="color:#cbd5e1">One build cycle, three workflows</div>
+        <hr class="price-div" style="border-color:#334155">
+        <p><strong style="color:#fbbf24">~10-13 hrs/mo returned.</strong> Compound savings on the same person.</p>
+        <p style="color:#cbd5e1;font-size:14px">Bundle retainer covers all three. Priced on the audit call based on your volume.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:28px">
+        <h3 style="margin-top:0">Phase 2 — Full Retainer</h3>
+        <div class="price" style="margin-bottom:8px">$1.5K-$5K/mo</div>
+        <div class="sub">Optional bookkeeping retainer</div>
+        <hr class="price-div">
+        <p>After automations are live, we can take on the bookkeeping work itself — now dramatically cheaper to deliver because AI handles the data entry.</p>
+        <p style="color:#64748b;font-size:14px"><a href="bookkeeping.html" style="color:#0ea5e9">See our bookkeeping retainer →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     10. SECONDARY CTA — Email Capture for Overview PDF
+============================================================ -->
+<section class="sec">
+  <div class="wrap" style="max-width:720px;text-align:center">
+    <div style="font-size:13px;color:#0ea5e9;font-weight:700;letter-spacing:2px">📄 OVERVIEW PDF</div>
+    <h2 style="margin-top:8px">Not Ready for a Call? Get the 5-Page Overview.</h2>
+    <p style="color:#475569;font-size:17px;margin-bottom:28px">A concise PDF walkthrough of the three workflows, ICP fit, pricing, and a sample ROI calculation. We'll email it when it's ready.</p>
+
+    <form action="https://formspree.io/f/xpwabpdx" method="POST" style="display:flex;gap:12px;max-width:520px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+      <input type="email" name="email" required placeholder="you@yourcompany.com" style="flex:1;min-width:240px;padding:14px 16px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;font-family:inherit">
+      <input type="hidden" name="_subject" value="New AI Workflow Overview PDF request">
+      <input type="hidden" name="source" value="workflow-automation page">
+      <button type="submit" class="btn btn-primary">Send Me the Overview</button>
+    </form>
+    <p style="color:#94a3b8;font-size:13px;margin-top:14px">No spam. Unsubscribe anytime. We'll also send you a short follow-up asking whether the workflows fit your business.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     11. PRIMARY CTA — Book the Audit
+============================================================ -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Start with a Free 30-Minute AI Efficiency Audit</h2>
+    <p>We don't sell the build from a brochure. The audit IS the conversation.</p>
+    <div style="margin:24px auto;max-width:680px;text-align:left;background:rgba(255,255,255,.08);padding:24px;border-radius:12px">
+      <ol style="margin:0;padding-left:20px;line-height:1.8">
+        <li><strong>15-minute working call</strong> — we walk through your back-office workflow (AR, AP, vendor setup, month-end close).</li>
+        <li><strong>We produce a written audit</strong> — 5-7 pages, delivered as a PDF, yours to keep.</li>
+        <li><strong>Inside the audit:</strong> which AI workflow (or a different automation entirely) is the highest-ROI build for <em>your</em> operation, with a specific ROI number for your business.</li>
+      </ol>
+    </div>
+    <p style="margin:16px 0 24px"><strong>You leave with the audit regardless.</strong> If we're a fit, we build. If we're not, you keep the audit.</p>
+    <a href="https://calendar.app.google/a2PXuKo8yGJwg3q36" target="_blank" class="btn btn-white btn-lg">Book Your Audit →</a>
+    <p style="margin-top:16px;font-size:14px;opacity:.8">Or call us directly: <a href="tel:7816260050" style="color:inherit;text-decoration:underline">(781) 626-0050</a></p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="logo-text">AISB <span>CONSULTING</span></div><p>AI-powered workflow automation, accounting, bookkeeping, and back-office services for small businesses.</p></div><div class="footer-col"><h4>Services</h4><a href="bookkeeping.html">Bookkeeping</a><a href="cfo-advisory.html">CFO Advisory</a><a href="tax.html">Tax</a><a href="payroll-hr.html">Payroll &amp; HR</a><a href="back-office-tech.html">Back Office Tech</a><a href="ai-efficiency-audit.html">AI Efficiency Audit</a><a href="workflow-automation.html">Workflow Automation</a></div><div class="footer-col"><h4>Explore</h4><a href="../why-aisb.html">Why AISB?</a><a href="../software.html">Software</a><a href="../pricing.html">Pricing</a><a href="../partners.html">Partners</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div><div class="footer-col"><h4>Contact</h4><a href="mailto:info@aisbconsulting.com">info@aisbconsulting.com</a><a href="tel:7816260050">(781) 626-0050</a><a href="tel:7814861659">Demo Line: (781) 486-1659</a><a href="../contact.html">Contact Us</a></div></div><div class="footer-bottom"><span>&copy; 2026 AISB Consulting. All rights reserved.</span><span>Built by Andrew Curtis</span></div></footer>
 <script>document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('navMenu').classList.toggle('open')});</script>
 </body>
 </html>
