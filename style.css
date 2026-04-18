@@ -327,6 +327,8 @@ p{color:#475569}
    UTILITIES
 ════════════════════════════════════════════ */
 .center{text-align:center}
+.demo-audio-block{text-align:center;padding:0 16px}
+.demo-label{font-weight:600;font-size:15px;margin-bottom:10px;color:#1e293b}
 .bg-light{background:#f8fafc}
 .bg-warm{background:#fef7ed}
 .mt-24{margin-top:24px}
